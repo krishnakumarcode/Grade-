@@ -1,0 +1,41 @@
+ #include<stdio.h> 
+ #include<conio.h>
+ int main()
+ {
+ 	int marks[5];
+ 	int i=0,sum=0;
+ 	float avg=0.0;
+ 	printf ("enter the marks:");
+ 	for(i=0;i<5;++i)
+ 	{
+	 	scanf("%d",&marks[i]);
+	 }
+ 	for(i=0;i<5;i++)
+ 	{
+ 		sum=sum+marks[i];
+	 }
+	avg=sum/5;
+    printf("%f\n",avg);
+    if (avg>=85 && avg<=100)
+      {
+      	printf("Grade A");
+	  }
+	else if (avg>=70 && avg<=84)
+      {
+      	printf("Grade B");
+	  }
+	else if (avg>=55 && avg<=69)
+      {
+      	printf("Grade C");
+	  }
+	else if (avg>=40 && avg<=54)
+      {
+      	printf("Grade D");
+	  }
+	else if (avg<40)
+      {
+      	printf("Grade F");
+	  }
+	  
+ }
+ 
